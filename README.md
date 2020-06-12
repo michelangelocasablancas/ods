@@ -50,12 +50,12 @@ El motor de clasificación lingüística se basará en una primera fase en 1 idi
 se realizará una asociación de términos y objetivos, de manera que, si estamos hablando de un concepto concreto, 
 el sistema será capaz clasificarlo en el objetivo correspondiente.
 
-![Imagen 1](../img/img1.png)
+![Imagen 1](img/img1.png?raw=true)
 
 Una vez analizada y clasificada toda la información (en una primera fase, a mano), se mostrarían los resultados en una plataforma web, 
 dando visibilidad a los actores que ya están cumpliendo con los ODS. El aspecto de la plataforma sería este: 
 
-![Imagen_2](../img/img2.png)
+![Imagen_2](img/img2.png?raw=true)
 
 Los ODS y la Agenda 2030 proponen metas ambiciosas, desconocidas y urgentes. Es por ello por lo que se necesita poner orden y proporcionar un método con el que se pueda abordar la agenda:
 *   Poner orden en lo que se está haciendo y/o afecte a Baleares, alrededor de los ODS.
@@ -69,7 +69,7 @@ Los ODS y la Agenda 2030 proponen metas ambiciosas, desconocidas y urgentes. Es 
 
 Disponemos de los siguientes datos:
 
-* tweets (#ods, #agenda2030, #sostenibilidad) recogidos desde hace aproximadamente un año.
+* tweets (`#ods`, `#agenda2030`, `#sostenibilidad`) recogidos desde hace aproximadamente un año.
 * Palabras más importantes por cada ODS para etiquetar los tweets.
 
 Los tweets están almacenados en una base de datos PostgreSQL. Para empezar a trabajar no necesitamos acceder a la base de datos.
