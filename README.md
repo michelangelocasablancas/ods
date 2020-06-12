@@ -65,7 +65,42 @@ Los ODS y la Agenda 2030 proponen metas ambiciosas, desconocidas y urgentes. Es 
 *   Ayudar a cumplir con la legalidad.
 *   Poner en valor los ODS dentro de cada organización
 
+## Datos
 
+Disponemos de los siguientes datos:
+
+* tweets (#ods, #agenda2030, #sostenibilidad) recogidos desde hace aproximadamente un año.
+* Palabras más importantes por cada ODS para etiquetar los tweets.
+
+Los tweets están almacenados en una base de datos PostgreSQL. Para empezar a trabajar no necesitamos acceder a la base de datos.
+Nos basta un dataset con una foto de los datos actuales.
+
+### Otros datos
+
+## Análisis exploratorio
+
+Estudiar los atributos y características de cada campo.
+
+Utilizar NLP:
+* Detección de entidades
+* Importancia de palabras: tf-idf
+* Comparar con las palabras recopiladas manualmente
+* Análisis de sentimientos
+
+Evaluar la posibilidad de etiquetar automáticamente con algún método semi-supervisado.
+
+## Preparar los datos
+
+* Limpiar los datos
+* Etiquetar los tweets. Será nuestro dataset para entrenar el clasificador.
+
+## Entrenar clasificador
+
+## Refinamiento del modelo
+
+## Resultados
+
+## Conclusiones
 
 ## Referencias
 
