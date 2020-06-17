@@ -69,8 +69,8 @@ Los ODS y la Agenda 2030 proponen metas ambiciosas, desconocidas y urgentes. Es 
 
 Disponemos de los siguientes datos:
 
-* tweets (`#ods`, `#agenda2030`, `#sostenibilidad`) recogidos desde hace aproximadamente un año.
-* Palabras más importantes por cada ODS para etiquetar los tweets.
+* tweets (`#ods`, `#agenda2030`, `#sostenibilidad`) recogidos desde hace aproximadamente un año. ([data/twitter_202006111846.zip](data/twitter_202006111846.zip))
+* Palabras más importantes por cada ODS para etiquetar los tweets. ([data/Diccionario Palabras ODS.xlsx](data/Diccionario Palabras ODS.xlsx))
 
 Los tweets están almacenados en una base de datos PostgreSQL. Para empezar a trabajar no necesitamos acceder a la base de datos.
 Nos basta un dataset con una foto de los datos actuales.
