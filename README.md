@@ -4,6 +4,8 @@
 
 ## Contenido de los diretorios
 
+La organización de los ficheros en el repositorio está basada en [2].
+
 * `data`: Datos utilizados. Directorio de sólo lectura.
 * `img`: Imágenes.
 * `ipynb`: _Jupyter Notebooks_ utilizados para experimentar. El nombre incluye como prefijo la fecha en formato AAAAMMDD.
@@ -104,4 +106,6 @@ Evaluar la posibilidad de etiquetar automáticamente con algún método semi-sup
 
 ## Referencias
 
-1.  https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/
+1. https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/
+1. Cook, Joshua. "Interactive Software Development".
+_Docker for Data Science: Building Scalable and Extensible Data Infrastructure Around the Jupyter Notebook Server_. Apress, 2017, pp. 213-251.
