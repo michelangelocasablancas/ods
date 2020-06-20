@@ -108,9 +108,9 @@ Obtener la similitud de cada _tweet_ con estos documentos.
 
 ### Búsqueda de documentos
 
-Construir una matriz $tf-idf$ con todos los _tweets_ y usarla para buscar _tweets_.
+Construir una matriz `tf-idf` con todos los _tweets_ y usarla para buscar _tweets_.
 
-1. Calcular $tf-idf$ para una palabra clave.
+1. Calcular `tf-idf` para una palabra clave.
 1. Buscar los documentos (_tweets_) más similares. Para ello utilizar la similitud coseno[4].
 
 ## Obtener información de los _tweets_
