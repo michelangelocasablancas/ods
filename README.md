@@ -4,7 +4,7 @@
 
 ## Contenido de los diretorios
 
-La organización de los ficheros en el repositorio está basada en [2]. Ver también [3]
+La organización de los ficheros en el repositorio está basada en [2]. Ver también [5]
 
 * `data`: Datos utilizados. Directorio de sólo lectura.
 * `img`: Imágenes.
