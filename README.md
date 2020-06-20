@@ -113,6 +113,10 @@ Construir una matriz $tf-idf$ con todos los _tweets_ y usarla para buscar _tweet
 1. Calcular $tf-idf$ para una palabra clave.
 1. Buscar los documentos (_tweets_) más similares. Para ello utilizar la similitud coseno[4].
 
+## Obtener información de los _tweets_
+
+Recuperar usuario, empresa, etc. de los _tweets_.
+
 ## Refinamiento del modelo
 
 ## Resultados
