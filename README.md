@@ -4,7 +4,7 @@
 
 ## Contenido de los diretorios
 
-La organización de los ficheros en el repositorio está basada en [2].
+La organización de los ficheros en el repositorio está basada en [2]. Ver también [3]
 
 * `data`: Datos utilizados. Directorio de sólo lectura.
 * `img`: Imágenes.
@@ -126,7 +126,8 @@ Recuperar usuario, empresa, etc. de los _tweets_.
 ## Referencias
 
 1. https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/
-1. Cook, Joshua. "Interactive Software Development".
+2. Cook, Joshua. "Interactive Software Development".
 _Docker for Data Science: Building Scalable and Extensible Data Infrastructure Around the Jupyter Notebook Server_. Apress, 2017, pp. 213-251.
-1. https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation
-1. https://en.wikipedia.org/wiki/Cosine_similarity
+3. https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation
+4. https://en.wikipedia.org/wiki/Cosine_similarity
+5. https://www.thinkingondata.com/how-to-organize-data-science-projects/
