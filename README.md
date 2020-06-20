@@ -72,7 +72,7 @@ Los ODS y la Agenda 2030 proponen metas ambiciosas, desconocidas y urgentes. Es 
 Disponemos de los siguientes datos:
 
 * tweets (`#ods`, `#agenda2030`, `#sostenibilidad`) recogidos desde hace aproximadamente un año. ([data/twitter_202006111846.zip](data/twitter_202006111846.zip))
-* Palabras más importantes por cada ODS para etiquetar los tweets. ([data/Diccionario Palabras ODS.xlsx](data/Diccionario Palabras ODS.xlsx))
+* Palabras clave por cada ODS para etiquetar los tweets. (`data/Diccionario Palabras ODS.xlsx`)
 
 Los tweets están almacenados en una base de datos PostgreSQL. Para empezar a trabajar no necesitamos acceder a la base de datos.
 Nos basta un dataset con una foto de los datos actuales.
@@ -93,10 +93,25 @@ Evaluar la posibilidad de etiquetar automáticamente con algún método semi-sup
 
 ## Preparar los datos
 
-* Limpiar los datos
-* Etiquetar los tweets. Será nuestro dataset para entrenar el clasificador.
+* Limpiar los _tweets_.
 
-## Entrenar clasificador
+## Clasificar los _tweets_
+
+### LDA
+
+Utilizar LDA[3] para agrupar los _tweets_ por temas de manera no supervisada.
+
+### Similitud entre documentos
+
+Unir la lista de palabras clave por ODS y considerarla un documento.
+Obtener la similitud de cada _tweet_ con estos documentos.
+
+### Búsqueda de documentos
+
+Construir una matriz $tf-idf$ con todos los _tweets_ y usarla para buscar _tweets_.
+
+1. Calcular $tf-idf$ para una palabra clave.
+1. Buscar los documentos (_tweets_) más similares. Para ello utilizar la similitud coseno[4].
 
 ## Refinamiento del modelo
 
@@ -109,3 +124,5 @@ Evaluar la posibilidad de etiquetar automáticamente con algún método semi-sup
 1. https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/
 1. Cook, Joshua. "Interactive Software Development".
 _Docker for Data Science: Building Scalable and Extensible Data Infrastructure Around the Jupyter Notebook Server_. Apress, 2017, pp. 213-251.
+1. https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation
+1. https://en.wikipedia.org/wiki/Cosine_similarity
