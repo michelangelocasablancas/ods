@@ -136,13 +136,18 @@ Con este método no obtuvimos nada en claro.
 
 ![ODS Bar](img/ods_bars.svg?raw=true)
 
-### Histograma: Número de ODS por tweet
+### Número de ODS por tweet
 
 ![ODS Hist](img/ods_histogram.svg?raw=true)
 
-#### Porcentaje de tweets que no están asociados a ningún ODS.
+Hay aproximadamente un **40%** de _tweets_ que no están asociados a ningún ODS. 
 
-40.87%
+### Clasificación de otros textos
+
+La operaciones que realizamos a los _tweets_ se pueden aplicar a cualquier otro texto.
+En [table.md](doc/table.md) se incluye el resultado de clasificar varios textos.
+
+[20200714_ods.ipynb](ipynb/20200714_ods.ipynb)
 
 ## Refinamiento del modelo
 
