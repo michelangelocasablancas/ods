@@ -142,11 +142,21 @@ Recuperar usuario, empresa, etc. de los _tweets_.
 
 ## Conclusiones
 
-En base al diccionario de palabras, se puede categorizar el grado de similitud de los tweets con los diferentes 17 Objetivosa de Desarollo Sostenible
+En base al diccionario de palabras, se puede categorizar el grado de similitud de los tweets con los diferentes 17 Objetivosa de Desarollo Sostenible.
+Hay palabras que se asocian directamente a varios ODS, debido a que tocan el mismo área.
 
-El 40.87% de los tweets no están relacionados con ningún ODS y la cantidad de ODS por tweet es muy similar entre los 2 y 10 ODS.
+El grado de similitud entre las palabras y los ODS lo hemos establecido en un 70%. Quizás podríamos ser más restrictivos y subir dicho grado a un 90%, para que el resultado fuese más preciso.
+
+El 40.87% de los tweets no están relacionados con ningún ODS debido a la baja calidad del tweet, porque a penas contenían información. Una gran parte del proyecto lo hemos destinado a la limpieza de los datos, para partir de un escenario de datos realista.
+
+La cantidad de ODS por tweet es muy similar entre los 2 y 10 ODS.
+
 
 ## Próximos Pasos
+Los tweets llevan asociadas las posiciones geográficas desde donde se emite el tweet, esto nos permitiría ver en qué poblaciones de España (o del mundo), se está trabajando en los ODS. Los tweets se generan desde cuentas específicas y se podrían ver cuantas cuentas hacen referencias a empresas, para poder analizar dicha información desde los sectores de actividad empresarial. 
+
+Otro tema que se puede realizar es añadir más diccionarios en otros idiomas, ya que, solo nos hemos basado en aquellos tweets escritos en castellano, pero se podría realizar algo similar en otros idiomas.
+
 
 ## Referencias
 
