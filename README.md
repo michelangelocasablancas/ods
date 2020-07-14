@@ -146,6 +146,8 @@ En base al diccionario de palabras, se puede categorizar el grado de similitud d
 
 El 40.87% de los tweets no están relacionados con ningún ODS y la cantidad de ODS por tweet es muy similar entre los 2 y 10 ODS.
 
+## Próximos Pasos
+
 ## Referencias
 
 1. https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/
