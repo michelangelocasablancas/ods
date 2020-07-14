@@ -100,15 +100,25 @@ Evaluar la posibilidad de etiquetar automáticamente con algún método semi-sup
 
 ## Clasificar los _tweets_
 
+Para clasificar los _tweets_ nos planteamos tres opciones.
+
 ### LDA
 
 Utilizar LDA[3] para agrupar los _tweets_ por temas de manera no supervisada.
+
+Hicimos algunas pruebas pero no llegamos a profundizar en esta opción.
+
+[20200613_tweets.ipynb](ipynb/20200613_tweets.ipynb)
 
 ### Similitud entre documentos
 
 Unir la lista de palabras clave por ODS y considerarla un documento.
 Obtener la similitud de cada _tweet_ con estos documentos.
 
+El comparación de los textos con la librería `spacy` fue la que nos dio mejores resultados.
+
+[20200617_similarity.ipynb](ipynb/20200617_similarity.ipynb), [20200627_similarity.ipynb](ipynb/202006127_similarity.ipynb)
+ 
 ### Búsqueda de documentos
 
 Construir una matriz `tf-idf` con todos los _tweets_ y usarla para buscar _tweets_.
@@ -116,26 +126,25 @@ Construir una matriz `tf-idf` con todos los _tweets_ y usarla para buscar _tweet
 1. Calcular `tf-idf` para una palabra clave.
 1. Buscar los documentos (_tweets_) más similares. Para ello utilizar la similitud coseno[4].
 
-## Obtener información de los _tweets_
+Con este método no obtuvimos nada en claro.
 
-Recuperar usuario, empresa, etc. de los _tweets_.
-
-## Refinamiento del modelo
+[20200703_tfidf.ipynb](ipynb/20200703_tfidf.ipynb)
 
 ## Resultados
 
 ### Lista de ODS y su frecuencia
 
-![ODS Bar](img/ods_bars.png?raw=true)
-
+![ODS Bar](img/ods_bars.svg?raw=true)
 
 ### Histograma: Número de ODS por tweet
 
-![ODS Hist](img/ods_histogram.png?raw=true)
+![ODS Hist](img/ods_histogram.svg?raw=true)
 
 #### Porcentaje de tweets que no están asociados a ningún ODS.
 
 40.87%
+
+## Refinamiento del modelo
 
 ## Conclusiones
 
