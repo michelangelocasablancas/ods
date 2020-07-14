@@ -95,7 +95,11 @@ Evaluar la posibilidad de etiquetar automáticamente con algún método semi-sup
 
 ## Preparar los datos
 
-* Limpiar los _tweets_.
+* A partir de los tweets recogidos durante más de un año en una base de datos y exportados en JSON, hacer lectura el archivo que los contiene.
+* Filtrar los tweets que están en español
+* Eliminar entradas con texto nulo.
+* Reindexar sin eliminar el índice original para después poder enlazar los textos con el resto de información del tweet. El reindexado es necesario para guardar el dataframe en formato feather.
+* Limpiar los _tweets_: Eliminar emojis, caracteres inválidos, separar los hashtags con camel-case en diferentes palabras
 
 ## Clasificar los _tweets_
 
@@ -123,7 +127,24 @@ Recuperar usuario, empresa, etc. de los _tweets_.
 
 ## Resultados
 
+### Lista de ODS y su frecuencia
+
+![ODS Bar](img/ods_bars.png?raw=true)
+
+
+### Histograma: Número de ODS por tweet
+
+![ODS Hist](img/ods_histogram.png?raw=true)
+
+#### Porcentaje de tweets que no están asociados a ningún ODS.
+
+40.87%
+
 ## Conclusiones
+
+En base al diccionario de palabras, se puede categorizar el grado de similitud de los tweets con los diferentes 17 Objetivosa de Desarollo Sostenible
+
+El 40.87% de los tweets no están relacionados con ningún ODS y la cantidad de ODS por tweet es muy similar entre los 2 y 10 ODS.
 
 ## Referencias
 
