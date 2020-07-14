@@ -128,11 +128,11 @@ Recuperar usuario, empresa, etc. de los _tweets_.
 ![ODS Bar](img/ods_bars.png?raw=true)
 
 
-### Histograma
+### Histograma: Número de ODS por tweet
 
 ![ODS Hist](img/ods_histogram.png?raw=true)
 
-### Porcentaje de tweets que no están asociados a ningún ODS.
+#### Porcentaje de tweets que no están asociados a ningún ODS.
 
 40.87%
 
