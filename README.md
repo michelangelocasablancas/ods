@@ -95,7 +95,11 @@ Evaluar la posibilidad de etiquetar automáticamente con algún método semi-sup
 
 ## Preparar los datos
 
-* Limpiar los _tweets_.
+* A partir de los tweets recogidos durante más de un año en una base de datos y exportados en JSON, hacer lectura el archivo que los contiene.
+* Filtrar los tweets que están en español
+* Eliminar entradas con texto nulo.
+* Reindexar sin eliminar el índice original para después poder enlazar los textos con el resto de información del tweet. El reindexado es necesario para guardar el dataframe en formato feather.
+* Limpiar los _tweets_: Eliminar emojis, caracteres inválidos, separar los hashtags con camel-case en diferentes palabras
 
 ## Clasificar los _tweets_
 
