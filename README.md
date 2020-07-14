@@ -8,9 +8,11 @@
 
 La organización de los ficheros en el repositorio está basada en [2]. Ver también [5]
 
-* `data`: Datos utilizados. Directorio de sólo lectura.
+* `data`: Datos utilizados. En este directorio se encuentran tanto los datos a procesar como los generados durante el análisis.
+* `doc`: Documentos.
 * `img`: Imágenes.
 * `ipynb`: _Jupyter Notebooks_ utilizados para experimentar. El nombre incluye como prefijo la fecha en formato AAAAMMDD.
+* `lib`: Módulos adicionales.
 
 ## Plan del proyecto
 
@@ -76,19 +78,7 @@ Disponemos de los siguientes datos:
 Los tweets están almacenados en una base de datos PostgreSQL. Para empezar a trabajar no necesitamos acceder a la base de datos.
 Nos basta un dataset con una foto de los datos actuales.
 
-### Otros datos
-
-## Análisis exploratorio
-
-Estudiar los atributos y características de cada campo.
-
-Utilizar NLP:
-* Detección de entidades
-* Importancia de palabras: tf-idf
-* Comparar con las palabras recopiladas manualmente
-* Análisis de sentimientos
-
-Evaluar la posibilidad de etiquetar automáticamente con algún método semi-supervisado.
+En el caso de _retweets_ se ha utilizado el texto del mensaje original.
 
 ## Preparar los datos
 
@@ -97,6 +87,8 @@ Evaluar la posibilidad de etiquetar automáticamente con algún método semi-sup
 * Eliminar entradas con texto nulo.
 * Reindexar sin eliminar el índice original para después poder enlazar los textos con el resto de información del tweet. El reindexado es necesario para guardar el dataframe en formato feather.
 * Limpiar los _tweets_: Eliminar emojis, caracteres inválidos, separar los hashtags con camel-case en diferentes palabras
+
+[20200611_dataset.ipynb](ipynb/20200611_dataset.ipynb), [20200613_tweets.ipynb](ipynb/20200613_tweets.ipynb) 
 
 ## Clasificar los _tweets_
 
@@ -115,7 +107,7 @@ Hicimos algunas pruebas pero no llegamos a profundizar en esta opción.
 Unir la lista de palabras clave por ODS y considerarla un documento.
 Obtener la similitud de cada _tweet_ con estos documentos.
 
-El comparación de los textos con la librería `spacy` fue la que nos dio mejores resultados.
+La comparación de los textos con la librería `spacy` fue la que nos dio mejores resultados.
 
 [20200617_similarity.ipynb](ipynb/20200617_similarity.ipynb), [20200627_similarity.ipynb](ipynb/202006127_similarity.ipynb)
  
@@ -126,7 +118,7 @@ Construir una matriz `tf-idf` con todos los _tweets_ y usarla para buscar _tweet
 1. Calcular `tf-idf` para una palabra clave.
 1. Buscar los documentos (_tweets_) más similares. Para ello utilizar la similitud coseno[4].
 
-Con este método no obtuvimos nada en claro.
+Con este método no sacamos nada en claro.
 
 [20200703_tfidf.ipynb](ipynb/20200703_tfidf.ipynb)
 
@@ -178,17 +170,22 @@ podríamos ajustar la lista de palabras y el umbral utilizados.
 
 ## Próximos Pasos
 
-* Los tweets llevan asociadas las posiciones geográficas desde donde se emite el tweet, esto nos permitiría ver en qué poblaciones de España (o del mundo), se está dando visibilidad a los ODS. 
+* Los tweets llevan asociadas las posiciones geográficas desde donde se emite el tweet, esto nos permitiría ver en qué poblaciones de España (o del mundo), se está dando visibilidad a los ODS.
+ [20200707_geolocation](ipynb/20200707_geolocation.ipynb)
 
-* Los tweets se generan desde cuentas específicas y se podrían ver cuántas cuentas hacen referencias a empresas. De esta manera podríamos analizar la información asociando las empresas a su sector de actividad empresarial y determinar que tipología de empresas están más comprometidas. 
+* Los tweets se generan desde cuentas específicas y se podrían ver cuántas cuentas hacen referencias a empresas. De esta manera podríamos analizar la información asociando las empresas a su sector de actividad empresarial y determinar que tipología de empresas están más comprometidas.
+ [20200714_users](ipynb/20200714_users.ipynb)
 
 * Otro tema que se puede realizar es añadir más diccionarios en otros idiomas, ya que, solo nos hemos basado en aquellos tweets escritos en castellano, pero se podría realizar algo similar en otros idiomas.
 
 * Hasta la fecha solo hemos evaluado textos de un máximo de 140 caracteres, pero se puede ampliar a textos más largos, de hecho se han realizado pruebas con resultados satisfactorios.
+[20200714_ods](ipynb/20200714_ods.ipynb)
 
 * También podemos utilizar una librería de análisis de sentimiento para saber si el impacto del ODS en el texto analizado está siendo positivo o negativo.
 
-* Y hemos hablado de crear un bot que esté en un servicio online y que esté siempre en funcionamiento, categorizando los textos recibidos. 
+* Y hemos hablado de crear un bot que esté en un servicio online y que esté siempre en funcionamiento, categorizando los textos recibidos.
+Se podría crear un microservicio que clasificara el texto para que lo consumiera el bot.
+[20200714_flask](ipynb/20200714_flask.ipynb), [20200714_requests](ipynb/20200714_requests.ipynb)
 
 
 ## Referencias
