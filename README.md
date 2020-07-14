@@ -123,8 +123,12 @@ Recuperar usuario, empresa, etc. de los _tweets_.
 
 ## Resultados
 
+Lista de ODS y su frecuencia
+
 ![ODS Bar](img/ods_bars.png?raw=true)
 
+
+Histograma 
 ![ODS Hist](img/ods_histogram.png?raw=true)
 
 ## Conclusiones
