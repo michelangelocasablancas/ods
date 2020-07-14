@@ -14,21 +14,16 @@ La organización de los ficheros en el repositorio está basada en [2]. Ver tamb
 
 ## Plan del proyecto
 
-Este proyecto consiste en identificar si un texto hace referencia a un ODS[1] (Objetivo de desarrollo sostenible)
-y tratar de clasificar a cual. Incluye divulgación sobre los ODS.
+Este proyecto consiste en identificar si un texto hace referencia a un Objetivo de desarrollo sostenible (ODS en adelante) y tratar de clasificar dicho texto con uno o varios ODS al que hace referencia. 
 
 ## Introducción
 
 El proyecto se enmarca en los ODS y en la llamada Agenda 2030, creada por Naciones Unidas en el encuentro de la COP21 
 celebrada en 2015 en París. En este encuentro, los países adheridos a Naciones Unidas llegan al Acuerdo de París donde 
-se consensuan unos Objetivos de Desarrollo Sostenible (ODS en adelante) que debe abordar cada país con medidas particulares. 
-La primera meta que deben cumplir dichos países, es presentar un plan de Acción antes de 2020. España lo ha presentado recientemente. 
+se consensuan unos Objetivos de Desarrollo Sostenible que debe abordar cada país con medidas particulares. 
 
-Esta Agenda multinivel y multiactor, que hay que cumplir cara a 2030, y cuyos ODS hay que abordar. 
-En este proyecto nos centraremos en la Empresa Privada, dejando al margen a la Empresa Pública y el individuo en general. 
-
-Existen organizaciones que, muchas veces sin saberlo, están abordando algún o algunos ODS. 
-Con la ejecución de este proyecto se quiere dar visibilidad a esas organizaciones, proporcionándoles una mención especial. 
+Existen organizaciones, administraciones públicas y también individuos que, muchas veces sin saberlo, están abordando algún o algunos ODS. 
+Queremos ver en qué ODS se está contribuyendo más.
 
 La plataforma contará con 2 motores:
 
@@ -61,7 +56,9 @@ dando visibilidad a los actores que ya están cumpliendo con los ODS. El aspecto
 
 ![Imagen_2](img/img2.png?raw=true)
 
-Los ODS y la Agenda 2030 proponen metas ambiciosas, desconocidas y urgentes. Es por ello por lo que se necesita poner orden y proporcionar un método con el que se pueda abordar la agenda:
+Los ODS y la Agenda 2030 proponen metas ambiciosas, desconocidas y urgentes. 
+Es por ello por lo que se necesita poner orden y proporcionar un método con el que se pueda abordar la agenda:
+
 *   Poner orden en lo que se está haciendo y/o afecte a Baleares, alrededor de los ODS.
 *   Dar visibilidad a los actores que ya están haciendo algo.
 *   Fomentar/poner en valor la reputación de los actores que ya están haciendo algo.
@@ -146,24 +143,24 @@ Recuperar usuario, empresa, etc. de los _tweets_.
 
 * El grado de similitud entre las palabras y los ODS lo hemos establecido en un 70%. Quizás podríamos ser más restrictivos y subir dicho grado a un 90%, para que el resultado fuese más preciso.
 
-* El 40.87% de los tweets no están relacionados con ningún ODS debido a la baja calidad del tweet, porque a penas contenían información. Una gran parte del proyecto lo hemos destinado a la limpieza de los datos, para partir de un escenario de datos realista.
+* El 40.87% de los tweets no están relacionados con ningún ODS debido a la baja calidad del tweet, porque a penas contenían información o texto válido. Una gran parte del proyecto lo hemos destinado a la limpieza de los datos, para partir de una calidad óptima de información.
 
 * La cantidad de ODS por tweet es muy similar entre los 2 y 10 ODS.
 
 
 ## Próximos Pasos
 
-* Los tweets llevan asociadas las posiciones geográficas desde donde se emite el tweet, esto nos permitiría ver en qué poblaciones de España (o del mundo), se está trabajando en los ODS. 
+* Los tweets llevan asociadas las posiciones geográficas desde donde se emite el tweet, esto nos permitiría ver en qué poblaciones de España (o del mundo), se está dando visibilidad a los ODS. 
 
-* Los tweets se generan desde cuentas específicas y se podrían ver cuántas cuentas hacen referencias a empresas, para poder analizar dicha información desde los sectores de actividad empresarial. 
+* Los tweets se generan desde cuentas específicas y se podrían ver cuántas cuentas hacen referencias a empresas. De esta manera podríamos analizar la información asociando las empresas a su sector de actividad empresarial y determinar que tipología de empresas están más comprometidas. 
 
 * Otro tema que se puede realizar es añadir más diccionarios en otros idiomas, ya que, solo nos hemos basado en aquellos tweets escritos en castellano, pero se podría realizar algo similar en otros idiomas.
 
-* Hasta la fecha solo hemos evaluado textos de un máximo de 140 caracteres, pero se puede ampliar a textos más largos.
+* Hasta la fecha solo hemos evaluado textos de un máximo de 140 caracteres, pero se puede ampliar a textos más largos, de hecho se han realizado pruebas con resultados satisfactorios.
 
 * También podemos utilizar una librería de análisis de sentimiento para saber si el impacto del ODS en el texto analizado está siendo positivo o negativo.
 
-* Y hemos hablado de crear un bot que esté online y que esté siempre en funcionamiento, categorizando los textos recibidos. 
+* Y hemos hablado de crear un bot que esté en un servicio online y que esté siempre en funcionamiento, categorizando los textos recibidos. 
 
 
 ## Referencias
