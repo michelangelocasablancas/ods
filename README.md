@@ -153,9 +153,17 @@ Recuperar usuario, empresa, etc. de los _tweets_.
 
 ## Próximos Pasos
 
-* Los tweets llevan asociadas las posiciones geográficas desde donde se emite el tweet, esto nos permitiría ver en qué poblaciones de España (o del mundo), se está trabajando en los ODS. Los tweets se generan desde cuentas específicas y se podrían ver cuantas cuentas hacen referencias a empresas, para poder analizar dicha información desde los sectores de actividad empresarial. 
+* Los tweets llevan asociadas las posiciones geográficas desde donde se emite el tweet, esto nos permitiría ver en qué poblaciones de España (o del mundo), se está trabajando en los ODS. 
+
+* Los tweets se generan desde cuentas específicas y se podrían ver cuántas cuentas hacen referencias a empresas, para poder analizar dicha información desde los sectores de actividad empresarial. 
 
 * Otro tema que se puede realizar es añadir más diccionarios en otros idiomas, ya que, solo nos hemos basado en aquellos tweets escritos en castellano, pero se podría realizar algo similar en otros idiomas.
+
+* Hasta la fecha solo hemos evaluado textos de un máximo de 140 caracteres, pero se puede ampliar a textos más largos.
+
+* También podemos utilizar una librería de análisis de sentimiento para saber si el impacto del ODS en el texto analizado está siendo positivo o negativo.
+
+* Y hemos hablado de crear un bot que esté online y que esté siempre en funcionamiento, categorizando los textos recibidos. 
 
 
 ## Referencias
