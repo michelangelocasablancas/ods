@@ -2,6 +2,8 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michelangelocasablancas/ods/master)
 
+![wordcloud](img/wordcloud.png?raw=true)
+
 ## Contenido de los diretorios
 
 La organización de los ficheros en el repositorio está basada en [2]. Ver también [5]
