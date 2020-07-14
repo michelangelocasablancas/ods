@@ -142,6 +142,10 @@ Recuperar usuario, empresa, etc. de los _tweets_.
 
 ## Conclusiones
 
+En base al diccionario de palabras, se puede categorizar el grado de similitud de los tweets con los diferentes 17 Objetivosa de Desarollo Sostenible
+
+El 40.87% de los tweets no están relacionados con ningún ODS y la cantidad de ODS por tweet es muy similar entre los 2 y 10 ODS.
+
 ## Referencias
 
 1. https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/
