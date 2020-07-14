@@ -145,15 +145,29 @@ Hay aproximadamente un **40%** de _tweets_ que no están asociados a ningún ODS
 ### Clasificación de otros textos
 
 La operaciones que realizamos a los _tweets_ se pueden aplicar a cualquier otro texto.
-En [table.md](doc/table.md) se incluye el resultado de clasificar varios textos.
+Hay _tweets_ que están asignados a casi todos los ODS.
+
+El fichero [table.md](doc/table.md) incluye una tabla con el resultado de clasificar varios textos.
+
+1. 17 textos cogidos de la web de la ONU. Uno por cada ODS.
+1. Una noticia de un diario digital.
+1. Un texto sobre deportes.
+1. Un anuncio de un concierto.
+
+Observando los resultado vemos que se clasifican bastante bien los textos sobre ODS.
+Aunque no ocurre lo mismo a la hora de asignar un ODS concreto.
 
 [20200714_ods.ipynb](ipynb/20200714_ods.ipynb)
 
 ## Refinamiento del modelo
 
+El procedimiento utilizado para clasificar los textos depende en gran medida del listado de palabras asignadas a cada ODS.
+Revisando los resultados al aplicar el modelo a textos clasificados previamente (como los incluidos en [table.md](doc/table.md))
+podríamos ajustar la lista de palabras y el umbral utilizados.
+
 ## Conclusiones
 
-* En base al diccionario de palabras, se puede categorizar el grado de similitud de los tweets con los diferentes 17 Objetivosa de Desarollo Sostenible. Hay palabras que se asocian directamente a varios ODS, debido a que tocan el mismo área.
+* En base al diccionario de palabras, se puede categorizar el grado de similitud de los tweets con los diferentes 17 Objetivos de Desarollo Sostenible. Hay palabras que se asocian directamente a varios ODS, debido a que tocan el mismo área.
 
 * El grado de similitud entre las palabras y los ODS lo hemos establecido en un 70%. Quizás podríamos ser más restrictivos y subir dicho grado a un 90%, para que el resultado fuese más preciso.
 
