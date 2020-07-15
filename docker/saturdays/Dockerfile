@@ -10,3 +10,5 @@ RUN pip install gensim==3.8.0
 RUN pip install geopandas==0.8.0
 RUN pip install geopy==2.0.0
 RUN pip install wordcloud==1.7.0
+
+RUN pip install https://github.com/explosion/spacy-models/releases/download/es_core_news_lg-2.3.0/es_core_news_lg-2.3.0.tar.gz
