@@ -1,4 +1,4 @@
-FROM alinde/saturdays:e35d147ec675
+FROM alinde/saturdays:036d64638954
 
 ARG NB_USER=jovian
 ARG NB_UID=1000
