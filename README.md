@@ -10,6 +10,7 @@ La organización de los ficheros en el repositorio está basada en [2]. Ver tamb
 
 * `data`: Datos utilizados. En este directorio se encuentran tanto los datos a procesar como los generados durante el análisis.
 * `doc`: Documentos.
+* `docker`: Manifiestos de docker.
 * `img`: Imágenes.
 * `ipynb`: _Jupyter Notebooks_ utilizados para experimentar. El nombre incluye como prefijo la fecha en formato AAAAMMDD.
 * `lib`: Módulos adicionales.
@@ -80,6 +81,8 @@ Nos basta un dataset con una foto de los datos actuales.
 
 En el caso de _retweets_ se ha utilizado el texto del mensaje original.
 
+[20200611_dataset.ipynb](ipynb/20200611_dataset.ipynb), [20200617_xlsx.ipynb](ipynb/20200617_xlsx.ipynb)
+
 ## Preparar los datos
 
 * A partir de los tweets recogidos durante más de un año en una base de datos y exportados en JSON, hacer lectura el archivo que los contiene.
@@ -88,7 +91,7 @@ En el caso de _retweets_ se ha utilizado el texto del mensaje original.
 * Reindexar sin eliminar el índice original para después poder enlazar los textos con el resto de información del tweet. El reindexado es necesario para guardar el dataframe en formato feather.
 * Limpiar los _tweets_: Eliminar emojis, caracteres inválidos, separar los hashtags con camel-case en diferentes palabras
 
-[20200611_dataset.ipynb](ipynb/20200611_dataset.ipynb), [20200613_tweets.ipynb](ipynb/20200613_tweets.ipynb) 
+[20200613_tweets.ipynb](ipynb/20200613_tweets.ipynb) 
 
 ## Clasificar los _tweets_
 
