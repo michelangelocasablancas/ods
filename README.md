@@ -112,7 +112,7 @@ Obtener la similitud de cada _tweet_ con estos documentos.
 
 La comparación de los textos con la librería `spacy` fue la que nos dio mejores resultados.
 
-[20200617_similarity.ipynb](ipynb/20200617_similarity.ipynb), [20200627_similarity.ipynb](ipynb/202006127_similarity.ipynb)
+[20200617_similarity.ipynb](ipynb/20200617_similarity.ipynb), [20200627_similarity.ipynb](ipynb/20200627_similarity.ipynb)
  
 ### Búsqueda de documentos
 
