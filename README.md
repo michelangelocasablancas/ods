@@ -190,6 +190,16 @@ podríamos ajustar la lista de palabras y el umbral utilizados.
 Se podría crear un microservicio que clasificara el texto para que lo consumiera el bot.
 [20200714_flask](ipynb/20200714_flask.ipynb), [20200714_requests](ipynb/20200714_requests.ipynb)
 
+## Mentor
+
+- Mar Muñoz
+
+## Autores
+
+- Antonio Linde
+- Miquel Oliver
+- Benyamine
+- Carles Serrano
 
 ## Referencias
 
