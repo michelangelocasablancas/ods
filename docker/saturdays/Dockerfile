@@ -12,3 +12,13 @@ RUN pip install geopy==2.0.0
 RUN pip install wordcloud==1.7.0
 
 RUN pip install https://github.com/explosion/spacy-models/releases/download/es_core_news_lg-2.3.0/es_core_news_lg-2.3.0.tar.gz
+
+USER root
+
+RUN apt update -y
+RUN apt-get install -y libproj-dev proj-data proj-bin
+RUN apt-get install -y libgeos-dev
+
+USER jovyan
+
+RUN pip install cartopy
