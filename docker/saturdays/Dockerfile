@@ -22,3 +22,5 @@ RUN apt-get install -y libgeos-dev
 USER jovyan
 
 RUN pip install cartopy
+
+RUN pip install mlxtend
