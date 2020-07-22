@@ -24,3 +24,4 @@ USER jovyan
 RUN pip install cartopy
 
 RUN pip install mlxtend
+RUN pip install descartes
