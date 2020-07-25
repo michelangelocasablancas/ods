@@ -198,7 +198,7 @@ Se podría crear un microservicio que clasificara el texto para que lo consumier
 
 - Antonio Linde
 - Miquel Oliver
-- Benyamine
+- Benyamin Benyaagoub
 - Carles Serrano
 
 ## Referencias
